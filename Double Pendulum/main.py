@@ -7,7 +7,7 @@ L1, L2 = 1, 1
 M1, M2 = 1, 1
 I1 = 1/12 * M1 * L1
 I2 = 1/12 * M2 * L2
-# contants, [g] = m/s^-2
+# constants, [g] = m/s^-2
 G = 9.81
 # thetas
 theta1, theta2 = 0, 0
@@ -29,4 +29,5 @@ def Calc_Energy(y1,y2,x1dot,x2dot,y1dot,y2dot,theta1dot,theta2dot):
     # Energy is the sum of kinetic and potential energy, v =mgh, t = 1/2mv^2 + 1/2Iomega^2
     v =-1*G*(M1*y1 + M2*y2)
     t = 1/2 * (M1 *(x1dot^2+y1dot^2)+ M2*(x2dot^2+y2dot^2)) + 1/2*(I1*theta1dot^2 + I2*theta2dot^2)
+
     return t + v
